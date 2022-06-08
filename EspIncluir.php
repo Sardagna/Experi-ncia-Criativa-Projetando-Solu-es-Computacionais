@@ -67,28 +67,13 @@
                                     <!-- input type="hidden" id="acaoForm" name="acaoForm" value="Contratar" -->
                                     <p>
                                         <label class="w3-text-deep-purple"><b>Nome</b></label>
-                                        <input class="w3-input w3-border w3-light-grey" name="Nome" type="text" pattern="[a-zA-Z\u00C0-\u00FF ]{10,100}$" title="Nome da especialidade entre 10 e 100 letras." required>
-                                    </p>
-                                    <p>
-                                        <label class="w3-text-deep-purple"><b>Descrição</b></label>
-                                        <textarea class="w3-input w3-border w3-light-grey " name="Descrição" rows="5" title="Texto Descritivo" required></textarea>
-                                    </p>
-                                </td>
-                                <td style="text-align:center">
-                                    <p>
-                                        <label class="w3-text-deep-purple"><b>ImagemSelecionada: </b></label>
-                                        <p><img id="imagemSelecionada" src="imagens/imagem.png" /></p>
-                                    </p>
-                                    <p>
-                                        <label class="w3-btn w3-theme"><b>Selecione uma imagem</b>
-                                        <input type="hidden" name="MAX_FILE_SIZE" value="16777215" />
-                                        <input type="file" id="Imagem" name="Imagem" accept="imagem/*" onchange="validaImagem(this);"></label>
+                                        <input class="w3-input w3-border w3-light-grey" name="Descricao" type="text" pattern="[a-zA-Z\u00C0-\u00FF ]{10,100}$" title="Nome da especialidade entre 10 e 100 letras." required>
                                     </p>
                                 </td>
                             <tr>
                                 <td colspan="2">
                                     <input type="submit" value="Registrar" class="w3-btn w3-theme">
-                                    <input type="button" value="Cancelar" class="w3-btn w3-theme" onclick="window.location.href='.'">
+                                    <input type="button" value="Cancelar" class="w3-btn w3-theme" onclick="window.location.href='EspListar.php'">
                                 </td>
                             </tr>
                         </table>

@@ -51,29 +51,7 @@
 				<!-- Acesso ao BD-->
 				<?php
 
-				$nome    = $_POST['Nome'];
-				$ementa = $_POST['Descrição'];
-
-
-				// Check $_FILES['Imagem']['error'] value.
-				switch ($_FILES['Imagem']['error']) {
-					case UPLOAD_ERR_OK:
-						break;
-					case UPLOAD_ERR_NO_FILE:
-						throw new RuntimeException('No file sent.');
-					case UPLOAD_ERR_INI_SIZE:
-					case UPLOAD_ERR_FORM_SIZE:
-						throw new RuntimeException('Exceeded filesize limit.');
-					default:
-						throw new RuntimeException('Unknown errors.');
-				}
-
-				if ($_FILES['Imagem']['size'] == 0) { // Não recebeu uma imagem binária
-					$sql = "INSERT INTO habilidade (Nomehabi, ementa, FotoBin) VALUES ('$nome','$ementa', NULL)";
-				} else {                              // Recebeu uma imagem binária
-					$imagem = addslashes(file_get_contents($_FILES['Imagem']['tmp_name'])); // Prepara para salvar em BD
-					$sql = "INSERT INTO habilidade (Nomehabi, ementa, FotoBin) VALUES ('$nome','$ementa', '$imagem')";
-				}
+				$descricao = $_POST['Descricao'];
 
 				// Cria conexão
 				$conn = mysqli_connect($servername, $username, $password, $database);
@@ -92,7 +70,7 @@
 				mysqli_query($conn, 'SET character_set_results=utf8');
 
 				// Faz Select na Base de Dados
-				// $sql = "INSERT INTO habilidade (Nomehabi, ementa) VALUES ('$nome','$ementa')";
+				$sql = "INSERT INTO Especialidade (descricao) VALUES ('$descricao')";
 				echo "<div class='w3-responsive w3-card-4'>";
 				if ($result = mysqli_query($conn, $sql)) {
 					echo "Um registro adicionado!";
@@ -103,6 +81,8 @@
 				mysqli_close($conn);  //Encerra conexao com o BD
 
 				?>
+
+                <input type="button" value="Voltar" class="w3-btn w3-theme" onclick="window.location.href='EspListar.php'"></p>
 			</div>
 		</div>
 

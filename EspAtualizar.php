@@ -34,7 +34,7 @@
 
 <body onload="w3_show_nav('menuEsp')">
 
-	<!-- Inclui MENU.PHP  
+	<!-- Inclui MENU.PHP --> 
 <?php require 'menu.php'; ?>
 <?php require 'conectaBD.php'; ?>
 
