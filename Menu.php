@@ -20,7 +20,7 @@
 		<!--	<a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-light-green w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuTurma')">TURMAS</a>-->
 		</div>
 	</div>
-
+  
 	<!-- Sidebar -->
 	<div class="w3-sidebar w3-bar-block w3-collapse w3-animate-left" style="z-index:3;width:270px" id="mySidebar">
 		<div class="w3-bar w3-hide-large w3-large">
