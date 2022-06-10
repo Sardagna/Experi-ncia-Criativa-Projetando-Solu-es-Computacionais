@@ -2,7 +2,7 @@
     <div class="w3-modal-content">
         <header class="w3-container w3-theme">
             <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-            <h2>IE Exemplo</h2>
+            <h2>Programa de Especialidade</h2>
         </header>
         <div class="w3-container">
             <p class="w3-small">Porgrama de Especialidades</p>
