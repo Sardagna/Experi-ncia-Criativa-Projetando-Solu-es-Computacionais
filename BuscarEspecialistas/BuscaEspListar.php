@@ -6,6 +6,8 @@
     <link rel="icon" type="image/png" href="imagens/IE_favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <style>
         .w3-theme {
             color: #ffff !important;
@@ -92,7 +94,7 @@
 
                         INNER JOIN especialidade AS Especialidade ON especialidade.especialidade_id = FuncEsp.especialidade_id;";
 
-                echo "<p onClick='$(#formulario').dialog('open')'/>";
+                echo "<p onClick='$(#formulario').dialog('open')'> TESTE </p>";
 
                 echo "<div class='w3-responsive w3-card-4'>";
                 if ($result = mysqli_query($conn, $sql)) {
