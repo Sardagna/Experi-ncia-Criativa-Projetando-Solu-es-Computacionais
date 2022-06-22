@@ -29,6 +29,7 @@
         document.getElementById("menufunc").style.display = "none";
         document.getElementById("menuEsp").style.display = "none";
         document.getElementById("menuBusca").style.display = "none";
+        document.getElementById("menuSele").style.display = "none";
         document.getElementById(name).style.display = "block";
 
     }
