@@ -55,10 +55,7 @@
 			<div class="w3-container">
 				<h3>Buscas</h3>
 			</div>
-
 			<a class="w3-bar-item w3-button" href='BuscaEspListar.php'>Busca de Especialistas</a>
-
-
 		</div>
 	</div>
 

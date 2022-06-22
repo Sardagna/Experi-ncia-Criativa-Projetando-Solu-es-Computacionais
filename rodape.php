@@ -28,7 +28,7 @@
     function w3_show_nav(name) {
         document.getElementById("menufunc").style.display = "none";
         document.getElementById("menuEsp").style.display = "none";
-        document.getElementById("menuTurma").style.display = "none";
+        document.getElementById("menuBusca").style.display = "none";
         document.getElementById(name).style.display = "block";
 
     }

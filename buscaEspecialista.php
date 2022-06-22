@@ -20,7 +20,7 @@
     }
 </style>
 </head>
-<body onload="w3_show_nav('menuTurma')">
+<body onload="w3_show_nav('menuBusca')">
 <!-- Inclui MENU.PHP  -->
 <?php require 'menu.php'; ?>
 <?php require 'conectaBD.php'; ?>
