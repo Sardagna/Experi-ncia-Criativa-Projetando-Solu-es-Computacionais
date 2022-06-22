@@ -17,7 +17,7 @@
 			<a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-light-green w3-large w3-theme w3-padding-16" href="javascript:void(0)" onclick="w3_open()">☰</a>
 			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-light-green w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menufunc')">Especialistas</a>
 			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-light-green w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuEsp')">Especialidades</a>
-		    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-light-green w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuTurma')">Buscar Especialista</a>
+		    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-light-green w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuTurma')">Buscar</a>
 		</div>
 	</div>
   
@@ -50,12 +50,12 @@
 			<a class="w3-bar-item w3-button" href='EspIncluir.php'>Criar Nova Especialidade</a>
 
 		</div>
-		<div id="menuTurma" class="myMenu" >
+		<div id="menuBusca" class="myMenu" >
 			<div class="w3-container">
-				<h3>Turmas</h3>
+				<h3>Buscas</h3>
 			</div>
-			<a class="w3-bar-item w3-button" href='turmaListar.php'>Relação de Turmas</a>
-			<a class="w3-bar-item w3-button" href='turmaIncluir.php'>Criar Nova Turma</a>
+			<a class="w3-bar-item w3-button" href='buscaEspecialidade.php'>Por Especialidade</a>
+			<a class="w3-bar-item w3-button" href='buscaEspecialista.php'>Por Especialista</a>
 
 		</div>
 	</div>
