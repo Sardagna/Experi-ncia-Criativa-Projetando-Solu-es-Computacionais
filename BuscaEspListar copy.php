@@ -141,17 +141,6 @@
             </div>
         </div>
 
-        <div id="dialog-form" class="flex-container">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>  
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>  
-            <div>7</div>
-            <div>8</div>
-        </div>
-
 
         <footer class="w3-panel w3-padding-32 w3-card-4 w3-light-grey w3-center w3-opacity">
             <p>
@@ -169,18 +158,30 @@
 </body>
 
 <script>
-    dialog = $( "#dialog-form" ).dialog({
-      autoOpen: false,
-      height: 400,
-      width: 350,
-      modal: true,
-      buttons: {
-        "Create an account": addUser,
-        Cancel: function() {
-          dialog.dialog( "close" );
-        }
-      },
-  } );
+
+    function VerUsername(username){
+                var page = "ajax.php?action=BuscaEspecialista";
+                $.ajax
+                        ({
+                            type: 'POST',
+                            dataType: 'html',
+                            url: page,
+                            beforeSend: function () {
+                                $("#resposta").html("Carregando...");
+                            },
+                            data: {username: "Rodrigo"},
+                            success: function (retorno)
+                            {
+                                
+                                $("#resposta").html(retorno);
+                            }
+                        });
+            }
+
+    $('#usernameinput').change(function () {
+        VerUsername($("#usernameinput").val());
+    });
+
   </script>
 
 </html>

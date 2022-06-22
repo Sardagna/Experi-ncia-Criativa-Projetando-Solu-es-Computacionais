@@ -5,7 +5,7 @@
             <h2>Programa de Especialidade</h2>
         </header>
         <div class="w3-container">
-            <p class="w3-small">Porgrama de Especialidades</p>
+            <p class="w3-small">Programa de Especialidades</p>
         </div>
         <footer class="w3-container w3-theme ">
         </footer>
