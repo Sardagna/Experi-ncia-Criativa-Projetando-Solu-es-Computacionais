@@ -126,6 +126,32 @@ if($_GET['action']=="BuscaEspecialista"){
             }
             $html .= "<table/>";
         }
+        else{
+            $html = " <table class='w3-table-all'>
+            <tr>
+                <th colspan='2'style='text-align:center'>Gestor</th>
+                <th colspan='4' style='text-align:center'>Especialista</th>
+                <th colspan='2' style='text-align:center'>Especialidade</th>
+                <th colspan='2' style='text-align:center'>Nível</th>
+            </tr>
+
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Código</th>
+                <th>Descrição</th>
+                <th></th>
+                <th></th>
+            </tr>";
+
+            $html .= "<h2 style='color:red'>Nenhum especialista encontrado !</h2>";
+
+            $html .= "<table/>";
+        }
     } else {
         echo "Erro executando SELECT: " . mysqli_error($conn);
     }
