@@ -6,6 +6,8 @@
     <link rel="icon" type="image/png" href="imagens/IE_favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <style>
         .w3-theme {
             color: #ffff !important;
@@ -101,7 +103,7 @@
 						<form class="w3-container" action="EspSelecionar_exe.php" method="post" onsubmit="return check(this.form)">
 							<input type="hidden" id="acaoForm" name="acaoForm" value="Contratar">
 							<p><label class="w3-text-deep-purple"><b>Especialista</b></label>
-								<select name="funcionario_id" class="w3-input w3-border" required>
+								<select id="selectFuncionarios" name="funcionario_id" class="w3-input w3-border" required>
 									<option value=""></option>
 								<?php
 									foreach($optionsFun as $key => $value){
@@ -110,7 +112,7 @@
 								?>
 							</select></p>
 							<p>	<label class="w3-text-deep-purple"><b>Especialidade</b></label>
-								<select name="especialidade_id" class="w3-input w3-border" required>
+								<select id="selectEspecialidade" name="especialidade_id" class="w3-input w3-border" required>
 									<option value=""></option>
 								<?php
 									foreach($optionsEsp as $key => $value){
@@ -123,7 +125,8 @@
 								<input class="w3-input w3-border w3-light-grey" name="nivel" type="text" maxlength="1" size="1" pattern="[1-5]"
 								title="Nivel - De 1 a 5" required></p>
 							<input type="submit" value="Registrar" class="w3-btn w3-theme" >
-							<input type="button" value="Cancelar" class="w3-btn w3-theme" onclick="window.location.href='.'"></p>
+							<input type="button" value="Cancelar" class="w3-btn w3-theme" onclick="window.location.href='.'">
+							<input type="button" value="Remover " class="w3-btn w3-theme" onclick="window.location.href='EspSelecionarRemover_exe.php?funcionario_id=' + ($('#selectFuncionarios').children('option:selected').val()) + '&especialidade_id=' + ($('#selectEspecialidade').children('option:selected').val())  "></p>
 							
 						</form>
 					</div>
