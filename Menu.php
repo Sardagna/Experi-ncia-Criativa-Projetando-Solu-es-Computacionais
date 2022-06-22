@@ -17,11 +17,8 @@
 			<a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-light-green w3-large w3-theme w3-padding-16" href="javascript:void(0)" onclick="w3_open()">☰</a>
 			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-light-green w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menufunc')">Especialistas</a>
 			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-light-green w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuEsp')">Especialidades</a>
-<<<<<<< HEAD
 		    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-light-green w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuBusca')">Buscar Especialista</a>
-=======
-		    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-small w3-hover-light-green w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuTurma')">Buscar</a>
->>>>>>> c4f3d156a0c2fd4379707ce73c0b96d17ba71155
+
 		</div>
 	</div>
   
@@ -55,20 +52,12 @@
 
 		</div>
 		<div id="menuBusca" class="myMenu" >
-<<<<<<< HEAD
-
 			<div class="w3-container">
 				<h3>Buscas</h3>
 			</div>
 
 			<a class="w3-bar-item w3-button" href='BuscaEspListar.php'>Busca de Especialistas</a>
-=======
-			<div class="w3-container">
-				<h3>Buscas</h3>
-			</div>
-			<a class="w3-bar-item w3-button" href='buscaEspecialidade.php'>Por Especialidade</a>
-			<a class="w3-bar-item w3-button" href='buscaEspecialista.php'>Por Especialista</a>
->>>>>>> c4f3d156a0c2fd4379707ce73c0b96d17ba71155
+
 
 		</div>
 	</div>
