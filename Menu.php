@@ -43,6 +43,12 @@
 
 
 		</div>
+		<div id="menuSele" class="myMenu">
+			<div class="w3-container">
+				<h3>Funcionarios</h3>
+			</div>
+			<a class="w3-bar-item w3-button" href="EspSelecionar.php">Selecioanr Especialista</a>
+		</div>
 		<div id="menuEsp" class="myMenu" >
 			<div class="w3-container">
 				<h3>Especialidades</h3>

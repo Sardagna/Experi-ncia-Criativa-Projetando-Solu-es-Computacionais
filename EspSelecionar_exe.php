@@ -7,8 +7,8 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	  <style>
-		.w3-theme {color:#ffff !important;background-color:#380077 !important}
-		.w3-code{border-left:4px solid #380077}
+		.w3-theme {color:#ffff !important;background-color:greem !important}
+		.w3-code{border-left:4px solid greem}
 		.myMenu {margin-bottom:150px}
       </style>
 	</head>

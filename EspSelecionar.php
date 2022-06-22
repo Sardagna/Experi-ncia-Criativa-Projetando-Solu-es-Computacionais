@@ -9,16 +9,20 @@
     <style>
         .w3-theme {
             color: #ffff !important;
-            background-color: #380077 !important
+            background-color: green !important
         }
 
         .w3-code {
-            border-left: 4px solid #380077
+            border-left: 4px solid greem
         }
 
         .myMenu {
             margin-bottom: 150px
         }
+		.w3-theme {color:#ffff !important;background-color:greem !important}
+		.w3-code{border-left:4px solid greem}
+		.myMenu {margin-bottom:150px}
+		.w3-text-deep-purple, .w3-hover-text-deep-purple:hover{	color: black;	}
     </style>
 </head>
 <body onload="w3_show_nav('menuBusca')">
