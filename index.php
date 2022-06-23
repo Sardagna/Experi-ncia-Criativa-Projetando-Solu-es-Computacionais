@@ -16,9 +16,13 @@
 		.myMenu {
 			margin-bottom: 150px
 		}
+
+		.myFont {
+		font-max-size: 8px
+		}
 	</style>
 
-	<body  onload="w3_show_nav('menufunc')">
+	<body  onload="w3_show_nav('menuEsp')">
 
 		<!-- Inclui MENU.PHP  -->
 		<?php require 'menu.php'; ?>
@@ -27,9 +31,9 @@
 		<!-- Conteúdo PRINCIPAL: deslocado para direita em 270 pixels quando a sidebar é visível -->
 		<div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
 
-			<!--<div class="w3-panel w3-padding-large w3-card-4 w3-light-grey">
+			<div class="w3-panel w3-padding-large w3-card-4 w3-light-grey">
 				<h1 class="w3-jumbo">Programa Especialidades</h1>
-				<p class="w3-xlarge">Cadastros de Funcionarios e habilidades</p>
+				<p class="w3-xlarge">Cadastro de Funcionarios e Habilidades</p>
 
 				<img src="imagens/cadastro.png" class="w3-circle" width="30%">
 
@@ -43,7 +47,7 @@
 							   onclick="document.getElementById('id01').style.display='block'">Sobre</a>
 						</nav>
 					</p>
-				</footer>-->
+				</footer>
 
 		<!-- FIM PRINCIPAL -->
 			</div>

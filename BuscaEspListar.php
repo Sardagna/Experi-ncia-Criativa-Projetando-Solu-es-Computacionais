@@ -141,10 +141,12 @@
                 </div>
                 <div class="col-75">
                     <select id="selectNiveis" name="niveis">
-                    <option value="0"> Todas </option>
+                    <option value="0"> Todos </option>
                     <option value="1"> 1 - Baixo</option>
-                    <option value="2"> 2 - Médio</option>
-                    <option value="3"> 3 - Alto</option>
+                    <option value="2"> 2 - </option>
+                    <option value="3"> 3 - Medio </option>
+                    <option value="4"> 4 - </option>
+                    <option value="5"> 5 - Alto </option>
                     </select>
                 </div>
                 </div>

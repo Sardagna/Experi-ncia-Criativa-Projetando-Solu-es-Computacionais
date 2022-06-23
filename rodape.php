@@ -2,10 +2,12 @@
     <div class="w3-modal-content">
         <header class="w3-container w3-theme">
             <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-            <h2>Programa de Especialidade</h2>
+            <h2>Programa de Especialidades</h2>
         </header>
         <div class="w3-container">
-            <p class="w3-small">Programa de Especialidades</p>
+            <p class="w3-small">Trabalho Experiência Criativa - PUCPR-BES</p>
+            <p class="w3-small">Projetando Solucões Computacionais</>
+            <p class="w3-small">Alunos: Eduardo, Eric, Rodrigo</p>
         </div>
         <footer class="w3-container w3-theme ">
         </footer>
@@ -26,7 +28,6 @@
     }
 
     function w3_show_nav(name) {
-        document.getElementById("menufunc").style.display = "none";
         document.getElementById("menuEsp").style.display = "none";
         document.getElementById("menuBusca").style.display = "none";
         document.getElementById("menuSele").style.display = "none";

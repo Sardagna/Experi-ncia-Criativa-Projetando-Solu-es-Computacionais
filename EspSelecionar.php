@@ -141,7 +141,8 @@
 <!-- FIM PRINCIPAL -->
 </div>
 
-<!-- Inclui RODAPE.PHP  -->
-<?php require 'rodape.php';?>
+    <!-- Inclui RODAPE.PHP  -->
+    <?php require 'rodape.php'; ?>
+
 </body>
 </html>
